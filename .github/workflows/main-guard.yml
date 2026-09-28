@@ -8,7 +8,7 @@ permissions:
   issues: write
 jobs:
   alert-direct-push:
-    if: github.actor != 'Mr-Salticidae'
+    if: github.repository == 'Mr-Salticidae/mirror-life-rehearsal' && github.actor != 'Mr-Salticidae'
     runs-on: ubuntu-latest
     steps:
       - name: Open alert issue
